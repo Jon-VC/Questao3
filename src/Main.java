@@ -8,6 +8,7 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         System.out.println("Digite sua mensage: ");
         String srt = scan.nextLine();
+        //melhoria na analise da string para casos de espaçamento errado
         final String texto = srt.replaceAll(" ", "");
 
         Pattern rostoFeliz = Pattern.compile(":-\\)");
